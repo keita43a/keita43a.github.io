@@ -23,7 +23,7 @@ font-family: 'Quicksand', sans-serif;
 }
 
 body{
-    background-image: url(images/fish-background.svg);
+    background-image: url(/images/fish-background.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-attachment: fixed;
@@ -248,7 +248,7 @@ footer a:hover{
     position: relative;
     width:100%;
     min-height:100vh;
-    background-image:url(images/background-img.png);
+    background-image:url(/images/background-img.png);
     background-size:cover;
     background-repeat:no-repeat;
     overflow: scroll;
@@ -877,7 +877,7 @@ h5.note{
     float:left;
     width:50%;
     height:100vh;
-    background-image:url(images/contact-img.png);
+    background-image:url(/images/contact-img.png);
     background-size:cover;
 }
 
