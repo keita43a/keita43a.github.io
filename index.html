@@ -31,18 +31,6 @@
 
           gtag('config', 'G-F4SV7F8871');
         </script>
-
-        <!-- Separated publication list -->
-        <script>
-        function loadModalContent() {
-            fetch('modal-publication-content.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('modal-window-publications').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading the modal content:', error));
-        }
-        </script>
     </head>
 
 
@@ -117,7 +105,70 @@
                                 <!-- The Modal -->
                                     <div id="modal-window-publications" class="modal-window modal">
 
+                                <!-- Modal content -->
+                                    <div class="modal-content">
+                                    <span class="close-modal" onclick="modal_close()">Close &times;</span>
 
+                                    <h3 class="research-title">Publications</h3>
+
+                                    <p><u><b>Abe, K.</b></u>, L. Nøstbakken, M.F. Wold, "<a>Quota Consolidation in Norwegian coastal fisheries</a>", Accepted at <i>Environmental and Resource Economics</i>, <a href="https://snf.no/en/publications/2023/quota-consolidation-in-norwegian-coastal-fisheries/" target="_blank">WP ver.<a></p>
+
+                                    <p>Nakamura K., <u><b>K. Abe</b></u>, G. Ishimura (2023), "<a href ="https://link.springer.com/article/10.1007/s12562-022-01656-4">A multi-species catch reduces risk and enhances stability in the fishery? Implications from a portfolio analysis of the Hokkaido setnet fishery</a>", <i>Fisheries Science</i></p>
+
+                                    <p><u><b>Abe, K.</b></u>, C.M. Anderson, M.N. Reimer (2022) "<a href ="https://link.springer.com/article/10.1007/s10640-022-00699-6">Catch more to catch less: Estimating timing choice as dynamic bycatch avoidance behavior</a>", <i>Environmental and Resource Economics</i></p>
+
+                                    <p>Ishimura G., <u><b>K. Abe</b></u>, K. Kanazawa, T. Goto (2022) "<a href ="https://link.springer.com/article/10.1007/s12562-022-01587-0">Exploring economic optimum fishing efforts: a case of Japanese swordfish longline fishery</a>", <i>Fisheries Science</i> (88), 245-258 </p>
+
+                                    <p><u><b>Abe, K.</b></u>, G.Ishimura, S. Baba,S. Yasui, K. Nakamura (2021) "<a href = "https://link.springer.com/article/10.1007/s12562-021-01574-x">Evaluating the impact of COVID-19 on ex-vessel prices using time-series analysis</a>", <i>Fisheries Science</i> (88), 191-202 </p>
+
+                                    <p>Sumaila U.R. et al. (2021) "<a href="https://www.science.org/doi/full/10.1126/science.abm1680" target="_blank">WTO must ban harmful fisheries subsidies</a>", <i>Science</i> (374), 6567, p.544 (Letter)</p>
+
+                                    <p><u><b>Abe, K.</b></u>, and Chris M. Anderson (2022) “<a href="https://www.journals.uchicago.edu/doi/10.1086/717726" target = "_blank">A dynamic model of fishing cruise duration</a>”,  <i>Journal of the Association of Environmental and Resource Economists</i> (9), 3</p>
+
+                                    <p><u><b>Abe, K.</b></u>, Y. Matsuki, G. Ishimura and S. Managi (2021) "<a href="https://www.sciencedirect.com/science/article/pii/S0308597X21003821">Rent distribution in an ex-vessel auction market of fisheries</a>” , <i>Marine Policy</i> (133) </p>
+
+                                    <p>Alizadeh Ashrafi, T., <u><b>K. Abe</b></u> (2021) "<a href="https://academic.oup.com/icesjms/advance-article/doi/10.1093/icesjms/fsab172/6364350" target = "_blank">Intra- and inter-temporal effort allocation and profit-maximizing strategy of trawl fishery</a>", <i>ICES Journal of Marine Science</i></p>
+
+                                    <p>Teh, L., L. Teh, G. Ishimura, <u><b>K. Abe</b></u>, R. Roman (2020) “<a href="https://www.sciencedirect.com/science/article/pii/S0308597X20309209?via%3Dihub" target="_blank">Not all small-scale fisheries arepoor and food insecure</a>” <i>Marine Policy</i> (122) </p>
+
+                                    <p>Tokunaga, K., G. Ishimura, S. Iwata, <u><b>K. Abe</b></u>, K. Ostuka, K. Kleisner and R. Fujita (2019) “<a href="https://www.sciencedirect.com/science/article/abs/pii/S0308597X18309333" target="_blank">Alternative outcomes under different fisheries management policies: Abioeconomic analysis of Japanese fisheries</a>”,  <i>Marine Policy</i> (108)</p>
+
+                                    <p><u><b>Abe, K.</b></u>, G. Ishimura, T. Tsurumi, S. Managi, and U.R. Sumaila (2017) “<a href="https://link.springer.com/article/10.1007%2Fs12562-017-1130-0" target="_blank">Does tradeopenness reduce domestic fisheries catch?</a>” <i>Fisheries Science</i>, (83),4, pp.1-10</p>
+
+                                    <br>
+                                    <h3 class="research-title">Publications in Japanese</h3>
+
+                                    <p>馬場 真哉, 石村 学志, <u><b>阿部 景太</b></u>, 金澤 海斗, 後藤 友明 (2023) “<a href="https://www.jstage.jst.go.jp/article/suisan/89/3/89_22-00061/_article/-char/ja" target="_blank">漁業活動に伴うデータの品質と収集に関する課題：いわて大漁ナビを例に</a>” <i>日本水産学会誌</i>, (89),3, pp.276-278</p>
+
+                                    <p><u><b>阿部景太</b></u> (forthcoming) "キンメダイの需要推定とTAC管理による漁獲制限の経済的影響推定への応用", <i>日本水産学会誌</i> </p>
+
+                                    <br>
+                                    <h3 class="research-title">Working Papers</h3>
+
+                                    <p><u><b>Abe, K.</b></u>, F.K. Diekert, Ø. Langangen, "Do fishers follow fish as fish follows suitable oceanographic conditions?"<i>Under Review</i></p>
+
+                                    <p>Aanesen, M., <u><b>K. Abe</b></u>, Quang Le, N., "Demand for animal proteins in Norway across various phases of the COVID-19 pandemic"</p>
+
+                                    <p> Roman, R.K., <u><b>K. Abe</b></u>, G. Ishimura, "Spatio-temporal diversification and stabilization dynamics of multispecies marine fishery portfolios: a historical analysis across Japan"</p>
+
+
+                                    <br>
+                                    <h3 class="research-title">Media Coverage</h3>
+
+                                    <p>"<a href="https://www.japan.go.jp/kizuna/2023/02/unknown_strong_and_waste-free_fishing.html" target="_blank">The Unknown Strong and Waste-Free Fishing Industry of Iwate</a>", February 20 2023, KIZUNA, Prime Minister's office of Japan, <a href="https://www.youtube.com/watch?v=mfIfHMu5b_Y" target="_blank">YouTube</a></p>
+
+                                    <p>"<a href="https://www.tokyo-np.co.jp/article/239022" target="_blank">北ミサイル着弾海域で操業中の日本漁船「2019年以降8隻」判明　本紙と国際NPO調査　脅威は現実的</a>", March 19 2023,東京新聞/中日新聞</p>
+
+                                    <p>"洋上風力発電が気になる　沖合展開に向け大切な視点　（長谷成人）", March 1 2023, 日刊水産経済新聞, <a href="https://lib.suisan-shinkou.or.jp/column/yojofuryokuhatsuden/18-hases.html" target="_blank">水産振興コラム</a></p>
+
+                                    <br>
+                                    <h3 class="research-title">Misc.</h3>
+
+                                    <p><u><b>阿部 景太</b></u>, 塩田 卓也, 石村 学志 (2023) “<a href="https://www.jstage.jst.go.jp/article/suisan/85/1/85_WA2592/_article/-char/ja" target="_blank">漁獲漁業のこれからを探して「日本の成功漁業を探求する」プロジェクトの予備的活動からの報告</a>” <i>日本水産学会誌</i>, (85),1, pp.93-96</p>
+
+
+
+                                    </div>
                                     </div>
                 </div>
 
