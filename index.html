@@ -35,7 +35,7 @@
         <!-- Separated publication list -->
         <script>
         function loadModalContent() {
-            fetch('modal-publications-content.html')
+            fetch('modal-publication-content.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('modal-window-publications').innerHTML = data;
