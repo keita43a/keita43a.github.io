@@ -595,6 +595,7 @@ h3.research-title{
     font-size:18px;
     line-height:26px;
     margin:20px 0;
+    text-align: left; /*Keita Added*/
 }
 
 /* The Close Button */
