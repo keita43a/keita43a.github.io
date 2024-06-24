@@ -578,6 +578,7 @@ h4{
     border-radius:5px;
     margin: 3% auto; /* 10% from the top and centered */
     padding: 60px 120px;
+    text-align: left; /*Keita Added*/
     width: 70%; /* Could be more or less, depending on screen size */
     font-family: 'Quicksand', sans-serif;
     -webkit-box-shadow: 0px 0px 41px 0px rgba(0,0,0,0.14);
