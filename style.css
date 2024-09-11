@@ -590,6 +590,8 @@ h3.research-title{
     font-family: 'Bitter', serif;
     margin-top:30px;
     font-size:28px;
+    text-align: center; /*Keita Added*/
+    
 }
 
 .modal-content p{
