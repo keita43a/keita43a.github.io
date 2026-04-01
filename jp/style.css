@@ -634,6 +634,11 @@ h3.research-title{
     padding:100px 30px;
 }
 
+.prospective{
+    padding:100px 80px;
+    background-color:#f9f8f2;
+}
+
 .teaching-contaner{
     
 }
@@ -724,6 +729,15 @@ h6.teaching-title{
                     }
             }
 
+
+.seminar{
+    display:block;
+    float:left;
+    width:60%;
+    margin-bottom:100px;
+    padding-left:40px;
+    box-sizing:border-box;
+}
 
 .pot_course{
     display:block;
