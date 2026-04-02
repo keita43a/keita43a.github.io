@@ -523,6 +523,14 @@ $(document).ready(function(){
 });
 
 
+// Close any visible modal (called by close buttons)
+function modal_close() {
+    var modals = document.getElementsByClassName('modal-window');
+    for (var i = 0; i < modals.length; i++) {
+        modals[i].style.display = 'none';
+    }
+}
+
 // Multiple Modal
 var modal = document.getElementsByClassName('modal-window');
 
