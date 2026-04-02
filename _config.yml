@@ -1,1 +1,2 @@
-theme: jekyll-theme-slate
+# No theme — custom CSS only. Removing jekyll-theme-slate prevents its
+# CSS from being injected into pages and breaking modal styling.
