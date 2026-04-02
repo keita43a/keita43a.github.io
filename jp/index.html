@@ -106,15 +106,6 @@ layout: null
                             <div class="yellow-button publications-button">Publications</div>
                         </div>
 
-                                <!-- The Modal -->
-                                    <div id="modal-window-publications" class="modal-window modal">
-
-                                <!-- Modal content -->
-                                    <div class="modal-content">
-                                    <span class="close-modal" onclick="modal_close()">Close &times;</span>
-                                    <div id="pub-content"></div>
-                                    </div>
-                              </div>
                 </div>
 
 
@@ -566,19 +557,15 @@ window.onclick = function(event) {
     }
 }
 
-// Fetch publications content on first open
-document.querySelector('[data-modal="modal-window-publications"]').addEventListener('click', function() {
-    var pubModal = document.getElementById('modal-window-publications');
-    if (!pubModal.dataset.loaded) {
-        fetch('/publications-content.html')
-            .then(function(r) { return r.text(); })
-            .then(function(html) {
-                document.getElementById('pub-content').innerHTML = html;
-                pubModal.dataset.loaded = '1';
-            });
-    }
-});
-
 </script>
+
+<!-- Publications Modal (body-level for reliable position:fixed rendering) -->
+<div id="modal-window-publications" class="modal-window modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="modal_close()">Close &times;</span>
+        {% include publications-content.html %}
+    </div>
+</div>
+
 </body>
 </html>
