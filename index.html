@@ -434,38 +434,16 @@ capital and labor as a source of comparative advantage, I aim to develop the mod
                     <p>I welcome students who want to work on questions close to my own research: the economics of fisheries management and of seafood markets. If your interest lies in an adjacent part of resource and environmental economics — energy, biodiversity, and so on — I am glad to talk, but fisheries and marine resources are where I can supervise you best.</p>
                 </div>
 
-                <div class="prospective-block">
-                    <h5>Undergraduate students</h5>
-                    <p>To study with me as an undergraduate, you need to enroll in the Faculty of Economics at Keio University, where I teach a lecture course in environmental economics and run a seminar. See the <a href="#seminar" class="about-link">seminar entry under TEACHING</a> for what the seminar involves. Note that undergraduate teaching, the seminar included, is conducted in Japanese.</p>
-                    <p>If your main language is English, the Faculty of Economics also offers <a href="https://www.keio.ac.jp/en/admissions/faculty/examinations/pearl/" target="_blank" class="about-link">PEARL</a>, a degree program taught entirely in English. The seminar itself still runs in Japanese, but I can give individual support in English alongside it.</p>
-                </div>
-
-                <div class="prospective-block">
-                    <h5>Master's students</h5>
-                    <p>I supervise students in the master's program of the Graduate School of Economics who intend to work in fisheries and marine resource economics, or a closely related field. Supervision is available in English or Japanese, and international students are accepted.</p>
-                    <p>Admission is decided by examination. You must pass the entrance examination of the Graduate School of Economics; contacting me in advance is not a substitute for it and carries no weight in the decision. What it is good for is judging fit — whether your interests and mine overlap closely enough that I can supervise you well — and that is worth settling before you invest in an application. Please consult the <a href="https://www.keio.ac.jp/en/gsecon/admission/" target="_blank" class="about-link">Graduate School's admissions information</a> for the procedure and the schedule.</p>
-                    <p>By the time you apply, I expect you to have:</p>
-                    <ul>
-                        <li>Intermediate microeconomics and econometrics</li>
-                        <li>The basics of calculus, linear algebra, and optimization</li>
-                        <li>Experience with data analysis in R, Python, Stata, Julia, or a similar language — or a firm intention to learn it before you arrive</li>
-                        <li>The ability to read academic articles in English</li>
-                        <li>A concrete question you want to answer, and the drive to pursue it. Rough around the edges is fine</li>
-                    </ul>
-                    <p>The last point matters most. I value undergraduate-level training in economics more than prior expertise in fisheries or the environment.</p>
-                </div>
-
-                <div class="prospective-block">
-                    <h5>Doctoral students</h5>
-                    <p>I supervise students in the doctoral program of the Graduate School of Economics, with publication in peer-reviewed international journals as the goal. At this level I take on students working specifically in fisheries and marine resource economics. In addition to what I expect of master's students:</p>
-                    <ul>
-                        <li>Master's-level microeconomics and econometrics</li>
-                        <li>The ability to carry an empirical project through to the end on your own</li>
-                        <li>The intention to write in English and to present at international conferences</li>
-                        <li>A master's thesis, or comparable research output</li>
-                    </ul>
-                    <p>Whether I can supervise you depends heavily on how far your research direction overlaps with mine. Please get in touch before you apply.</p>
-                    <p>On funding, the main routes are the <a href="https://www.jsps.go.jp/english/" target="_blank" class="about-link">JSPS Research Fellowship for Young Scientists (DC)</a>, <a href="https://doctoral-support.keio.ac.jp/spring/" target="_blank" class="about-link">Keio-SPRING</a>, and the <a href="https://www.keio.ac.jp/en/gsecon/admission/sholarship/" target="_blank" class="about-link">scholarships offered by the Graduate School of Economics</a>. Eligibility differs from one scheme to the next, and some impose conditions on nationality or residence status. Please check the current conditions on each scheme's own website before counting on it. Some of these pages are available in Japanese only.</p>
+                <div class="prospective-row">
+                    <div class="prospective-box click-to-open" data-modal="modal-window-undergraduate">
+                        <p>Undergraduate</p>
+                    </div>
+                    <div class="prospective-box alt click-to-open" data-modal="modal-window-masters">
+                        <p>Master's</p>
+                    </div>
+                    <div class="prospective-box click-to-open" data-modal="modal-window-doctoral">
+                        <p>Doctoral</p>
+                    </div>
                 </div>
 
                 <div class="prospective-block">
@@ -628,6 +606,49 @@ window.onclick = function(event) {
     <div class="modal-content">
         <span class="close-modal" onclick="modal_close()">Close &times;</span>
         {% include publications-content.html %}
+    </div>
+</div>
+
+<div id="modal-window-undergraduate" class="modal-window modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="modal_close()">Close &times;</span>
+        <h3 class="research-title">Undergraduate students</h3>
+        <p>To study with me as an undergraduate, you need to enroll in the Faculty of Economics at Keio University, where I teach a lecture course in environmental economics and run a seminar. See the seminar entry under TEACHING for what the seminar involves. Note that undergraduate teaching, the seminar included, is conducted in Japanese.</p>
+        <p>If your main language is English, the Faculty of Economics also offers <a href="https://www.keio.ac.jp/en/admissions/faculty/examinations/pearl/" target="_blank" class="about-link">PEARL</a>, a degree program taught entirely in English. The seminar itself still runs in Japanese, but I can give individual support in English alongside it.</p>
+    </div>
+</div>
+
+<div id="modal-window-masters" class="modal-window modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="modal_close()">Close &times;</span>
+        <h3 class="research-title">Master's students</h3>
+        <p>I supervise students in the master's program of the Graduate School of Economics who intend to work in fisheries and marine resource economics, or a closely related field. Supervision is available in English or Japanese, and international students are accepted.</p>
+        <p>Admission is decided by examination. You must pass the entrance examination of the Graduate School of Economics; contacting me in advance is not a substitute for it and carries no weight in the decision. What it is good for is judging fit — whether your interests and mine overlap closely enough that I can supervise you well — and that is worth settling before you invest in an application. Please consult the <a href="https://www.keio.ac.jp/en/gsecon/admission/" target="_blank" class="about-link">Graduate School's admissions information</a> for the procedure and the schedule.</p>
+        <p>By the time you apply, I expect you to have:</p>
+        <ul>
+            <li>Intermediate microeconomics and econometrics</li>
+            <li>The basics of calculus, linear algebra, and optimization</li>
+            <li>Experience with data analysis in R, Python, Stata, Julia, or a similar language — or a firm intention to learn it before you arrive</li>
+            <li>The ability to read academic articles in English</li>
+            <li>A concrete question you want to answer, and the drive to pursue it. Rough around the edges is fine</li>
+        </ul>
+        <p>The last point matters most. I value undergraduate-level training in economics more than prior expertise in fisheries or the environment.</p>
+    </div>
+</div>
+
+<div id="modal-window-doctoral" class="modal-window modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="modal_close()">Close &times;</span>
+        <h3 class="research-title">Doctoral students</h3>
+        <p>I supervise students in the doctoral program of the Graduate School of Economics, with publication in peer-reviewed international journals as the goal. At this level I take on students working specifically in fisheries and marine resource economics. In addition to what I expect of master's students:</p>
+        <ul>
+            <li>Master's-level microeconomics and econometrics</li>
+            <li>The ability to carry an empirical project through to the end on your own</li>
+            <li>The intention to write in English and to present at international conferences</li>
+            <li>A master's thesis, or comparable research output</li>
+        </ul>
+        <p>Whether I can supervise you depends heavily on how far your research direction overlaps with mine. Please get in touch before you apply.</p>
+        <p>On funding, the main routes are the <a href="https://www.jsps.go.jp/english/" target="_blank" class="about-link">JSPS Research Fellowship for Young Scientists (DC)</a>, <a href="https://doctoral-support.keio.ac.jp/spring/" target="_blank" class="about-link">Keio-SPRING</a>, and the <a href="https://www.keio.ac.jp/en/gsecon/admission/sholarship/" target="_blank" class="about-link">scholarships offered by the Graduate School of Economics</a>. Eligibility differs from one scheme to the next, and some impose conditions on nationality or residence status. Please check the current conditions on each scheme's own website before counting on it. Some of these pages are available in Japanese only.</p>
     </div>
 </div>
 

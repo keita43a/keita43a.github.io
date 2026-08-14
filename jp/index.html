@@ -447,36 +447,16 @@ layout: null
                     <p>私の研究に関連するトピックに興味のある学生を歓迎します。水産資源管理や水産物市場の経済分析はもちろん、エネルギーや生物多様性など、その周辺の資源・環境分野についても相談に応じます。</p>
                 </div>
 
-                <div class="prospective-block">
-                    <h5>学部生</h5>
-                    <p>学部生として私のもとで学びたい場合は、慶應義塾大学経済学部に入学する必要があります。経済学部では、環境経済論の講義に加えてゼミを開講しています。ゼミの内容については<a href="#seminar" class="about-link">TEACHINGのゼミの項目</a>を参照してください。</p>
-                </div>
-
-                <div class="prospective-block">
-                    <h5>修士課程</h5>
-                    <p>経済学研究科の修士課程で指導を行っています。研究者を志す人と、専門的な分析能力を持って行政・企業・国際機関で働きたい人の両方を歓迎します。</p>
-                    <p>出願を検討する段階で身につけておいてほしいことは次のとおりです。</p>
-                    <ul>
-                        <li>中級レベルのミクロ経済学と計量経済学</li>
-                        <li>微分積分・線形代数・最適化の基礎</li>
-                        <li>R、Python、Stata、Julia などによるデータ分析の経験、または入学までに習得する意思</li>
-                        <li>英語の学術論文を読む力</li>
-                        <li>粗削りで構わないので、「これを明らかにしたい」という具体的な問題意識と熱意</li>
-                    </ul>
-                    <p>最後の項目が最も重要です。水産や環境に関する専門知識よりも、経済学の学部レベルの知識を重視します。</p>
-                </div>
-
-                <div class="prospective-block">
-                    <h5>博士課程</h5>
-                    <p>経済学研究科の後期博士課程で指導を行っています。特に水産経済学・資源経済学にフォーカスした研究者を志す方の指導を受け入れいています。特に水産資源の経済学に興味を持っている人は歓迎します。査読付き国際誌への論文投稿を目標に指導します。修士課程で求めるものに加えて、次を前提とします。</p>
-                    <ul>
-                        <li>修士レベルのミクロ経済学・計量経済学</li>
-                        <li>自分ひとりで分析を最後まで回しきる実装力</li>
-                        <li>英語で論文を書き、国際学会で発表する意思</li>
-                        <li>修士論文、またはそれに準ずる研究成果</li>
-                    </ul>
-                    <p>研究テーマの方向性が私の専門と重なるかどうかが、指導できるかを大きく左右します。出願前に必ず相談してください。</p>
-                    <p>また博士課程でのファンディングについては、学振のほか<a href="https://doctoral-support.keio.ac.jp/spring/"  target="_blank">Keio-SPRING</a>や<a href="https://www.keio.ac.jp/ja/gsecon/admission/sholarship/"  target="_blank">経済学研究科の奨学金</a>を参照して下さい。</p>
+                <div class="prospective-row">
+                    <div class="prospective-box click-to-open" data-modal="modal-window-undergraduate">
+                        <p>学部生</p>
+                    </div>
+                    <div class="prospective-box alt click-to-open" data-modal="modal-window-masters">
+                        <p>修士課程</p>
+                    </div>
+                    <div class="prospective-box click-to-open" data-modal="modal-window-doctoral">
+                        <p>博士課程</p>
+                    </div>
                 </div>
 
                 <div class="prospective-block">
@@ -639,6 +619,47 @@ window.onclick = function(event) {
     <div class="modal-content">
         <span class="close-modal" onclick="modal_close()">Close &times;</span>
         {% include publications-content.html %}
+    </div>
+</div>
+
+<div id="modal-window-undergraduate" class="modal-window modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="modal_close()">Close &times;</span>
+        <h3 class="research-title">学部生</h3>
+        <p>学部生として私のもとで学びたい場合は、慶應義塾大学経済学部に入学する必要があります。経済学部では、環境経済論の講義に加えてゼミを開講しています。ゼミの内容についてはTEACHINGのゼミの項目を参照してください。</p>
+    </div>
+</div>
+
+<div id="modal-window-masters" class="modal-window modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="modal_close()">Close &times;</span>
+        <h3 class="research-title">修士課程</h3>
+        <p>経済学研究科の修士課程で指導を行っています。研究者を志す人と、専門的な分析能力を持って行政・企業・国際機関で働きたい人の両方を歓迎します。</p>
+        <p>出願を検討する段階で身につけておいてほしいことは次のとおりです。</p>
+        <ul>
+            <li>中級レベルのミクロ経済学と計量経済学</li>
+            <li>微分積分・線形代数・最適化の基礎</li>
+            <li>R、Python、Stata、Julia などによるデータ分析の経験、または入学までに習得する意思</li>
+            <li>英語の学術論文を読む力</li>
+            <li>粗削りで構わないので、「これを明らかにしたい」という具体的な問題意識と熱意</li>
+        </ul>
+        <p>最後の項目が最も重要です。水産や環境に関する専門知識よりも、経済学の学部レベルの知識を重視します。</p>
+    </div>
+</div>
+
+<div id="modal-window-doctoral" class="modal-window modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="modal_close()">Close &times;</span>
+        <h3 class="research-title">博士課程</h3>
+        <p>経済学研究科の後期博士課程で指導を行っています。特に水産経済学・資源経済学にフォーカスした研究者を志す方の指導を受け入れいています。特に水産資源の経済学に興味を持っている人は歓迎します。査読付き国際誌への論文投稿を目標に指導します。修士課程で求めるものに加えて、次を前提とします。</p>
+        <ul>
+            <li>修士レベルのミクロ経済学・計量経済学</li>
+            <li>自分ひとりで分析を最後まで回しきる実装力</li>
+            <li>英語で論文を書き、国際学会で発表する意思</li>
+            <li>修士論文、またはそれに準ずる研究成果</li>
+        </ul>
+        <p>研究テーマの方向性が私の専門と重なるかどうかが、指導できるかを大きく左右します。出願前に必ず相談してください。</p>
+        <p>また博士課程でのファンディングについては、学振のほか<a href="https://doctoral-support.keio.ac.jp/spring/" target="_blank" class="about-link">Keio-SPRING</a>や<a href="https://www.keio.ac.jp/ja/gsecon/admission/sholarship/" target="_blank" class="about-link">経済学研究科の奨学金</a>を参照して下さい。</p>
     </div>
 </div>
 
