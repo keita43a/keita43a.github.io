@@ -686,7 +686,8 @@ h3.research-title{
 }
 
 /* 明るい背景の節では白ホバーだと消えるため上書き */
-.prospective a.about-link:hover{
+.prospective a.about-link:hover,
+.teaching a.about-link:hover{
     color:#333333;
 }
 
@@ -789,6 +790,56 @@ h6.teaching-title{
     padding-left:40px;
     box-sizing:border-box;
 }
+
+.seminar p{
+    line-height:28px;
+    margin-bottom:16px;
+}
+
+.seminar ul{
+    font-size:15px;
+    line-height:26px;
+    margin:0 0 18px 0;
+    padding-left:24px;
+}
+
+.seminar li{
+    margin-bottom:8px;
+}
+
+.seminar-photo{
+    width:50%;
+    margin:30px auto;
+}
+
+.seminar-photo img{
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:5px;
+}
+
+.seminar-photo figcaption{
+    font-size:13px;
+    line-height:20px;
+    margin-top:10px;
+    text-align:center;
+    color:#666666;
+}
+
+    /* mobile */
+    @media screen and (max-width:768px) {
+        .seminar{
+            float:none;
+            width:100%;
+            padding-left:0;
+            margin-bottom:60px;
+        }
+
+        .seminar-photo{
+            width:80%;
+        }
+    }
 
 .pot_course{
     display:block;

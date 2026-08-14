@@ -4,3 +4,10 @@
 .Ruserdata
 
 .pptx
+
+# macOS
+.DS_Store
+
+# Jekyll build output
+_site/
+.jekyll-cache/
